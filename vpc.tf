@@ -1,3 +1,7 @@
+module "network" {
+  source  = "app.terraform.io/phbaorg123/network/google"
+  version = "7.5.0"
+  # insert required variables here
 subnets = [
   {
     subnet_name   = "gaurav-subnet"
@@ -5,3 +9,4 @@ subnets = [
     subnet_region = var.region
   }
 ]
+}
